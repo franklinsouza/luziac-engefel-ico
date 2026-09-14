@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "NEW CENTRAL GARDEN",
+        "img": "project_img01.jpg",
+        "status": "Under Construction",
+        "type": "House",
+        "location": "BALTIMORE, MD"
+    },
+    {
+        "id": 2,
+        "title": "CITY SHOPPING COMPLEX",
+        "img": "project_img02.jpg",
+        "status": "Under Construction",
+        "type": "House",
+        "location": "CHARLOTTESVILLE, VA"
+    },
+    {
+        "id": 3,
+        "title": "MODERN RESIDENTIAL PARK",
+        "img": "project_img03.jpg",
+        "status": "Complete",
+        "type": "Apartment",
+        "location": "NEW YORK, NY"
+    },
+    {
+        "id": 4,
+        "title": "PARAGON HOTEL CONCEPT",
+        "img": "project_img04.jpg",
+        "status": "Complete",
+        "type": "Apartment",
+        "location": "NEW ORLEANS, LA"
+    },
+    {
+        "id": 5,
+        "title": "BRUNSWICK WEST WING",
+        "img": "project_img05.jpg",
+        "status": "Complete",
+        "type": "House",
+        "location": "SOUTH GATE, CA"
+    },
+    {
+        "id": 6,
+        "title": "ANDORRA SHOPPING CENTER",
+        "img": "project_img06.jpg",
+        "status": "Under Construction",
+        "type": "Apartment",
+        "location": "ROCKVILLE, MD"
+    },
+    {
+        "id": 7,
+        "title": "GAITHERSBURG SQUARE",
+        "img": "project_img07.jpg",
+        "status": "Complete",
+        "type": "House",
+        "location": "GAITHERSBURG, MD"
+    },
+    {
+        "id": 8,
+        "title": "HASTINGS RANCH PLAZA",
+        "img": "project_img08.jpg",
+        "status": "Under Construction",
+        "type": "Apartment",
+        "location": "PASADENA, CA"
+    },
+    {
+        "id": 9,
+        "title": "THIRD STREET PROMENADE",
+        "img": "project_img09.jpg",
+        "status": "Complete",
+        "type": "House",
+        "location": "SANTA MONICA, CA"
+    },
+    {
+        "id": 10,
+        "title": "CAMELBACK COLONNADE",
+        "img": "project_img10.jpg",
+        "status": "Under Construction",
+        "type": "Apartment",
+        "location": "PHOENIX, AZ"
+    },
+    {
+        "id": 11,
+        "title": "BELL GARDENS MARKETPLACE",
+        "img": "project_img11.jpg",
+        "status": "Complete",
+        "type": "House",
+        "location": "BELL GARDENS, CA"
+    },
+    {
+        "id": 12,
+        "title": "CONGRESSIONAL PLAZA",
+        "img": "project_img12.jpg",
+        "status": "Under Construction",
+        "type": "Apartment",
+        "location": "ROCKVILLE, MD"
+    }
+]
