@@ -50,16 +50,20 @@
 ===============================*/
 :root {
     --tg-body-font-family     : 'Montserrat', sans-serif;
-    --tg-heading-font-family  : 'Vidaloka', serif;
-    --tg-primary-color        : #BD9A68;
-    --tg-secondary-color      : #202020;
-    --tg-body-background-color: #FEFFFB;
-    --tg-secondary-background : #F9FAF1;
+    --tg-heading-font-family  : 'Tenor Sans', sans-serif;
+    --tg-primary-color        : #6F8B61;
+    --tg-primary-color-dark   : #556B4F;
+    --tg-primary-color-light  : #A4B893;
+    --tg-primary-color-pale   : #DCE4D8;
+    --tg-accent-color         : #CBB89B;
+    --tg-secondary-color      : #190100;
+    --tg-body-background-color: #F0EADD;
+    --tg-secondary-background : #DCE4D8;
     --tg-body-font-color      : #797978;
-    --tg-heading-font-color   : #202020;
+    --tg-heading-font-color   : #190100;
     --tg-paragraph-color      : #797978;
-    --tg-gradient-color       : linear-gradient(180deg, #F9FAF1 0%, #FEFFFB 100%);
-    --tg-body-font-size       : 15px;
+    --tg-gradient-color       : linear-gradient(180deg, #DCE4D8 0%, #F0EADD 100%);
+    --tg-body-font-size       : 16px;
     --tg-body-font-weight     : 400;
     --tg-heading-font-weight  : 400;
     --tg-body-line-height     : 1.86;
@@ -74,8 +78,8 @@
     --tg-green                : #198754;
     --tg-teal                 : #20c997;
     --tg-cyan                 : #0dcaf0;
-    --tg-white                : #FBFBFB;
-    --tg-black                : #272727;
+    --tg-white                : #FFFFFF;
+    --tg-black                : #190100;
     --tg-gray                 : #E2E2E2;
     --tg-silver               : #9B9B9B;
     --facebook                : #3b5998;
@@ -809,7 +813,8 @@ label {
 
 /* header-three */
 .menu-style-three .navbar-wrap ul li a {
-    color: var(--tg-secondary-color);
+    color  : var(--tg-secondary-color);
+    padding: 48px 14px;
 }
 
 .menu-style-three .navbar-wrap>ul>li.active>a,
@@ -826,7 +831,7 @@ label {
 }
 
 .menu-style-three .navbar-wrap ul {
-    margin: 0 auto;
+    margin: 0 0 0 auto;
 }
 
 .menu-style-three .logo {
@@ -1863,10 +1868,10 @@ label {
 }
 
 .banner-content .title {
-    font-size     : 120px;
+    font-size     : 60px;
     text-transform: uppercase;
     margin-bottom : 40px;
-    line-height   : .8;
+    line-height   : 1.3;
     color         : var(--tg-white);
 }
 
@@ -2312,6 +2317,604 @@ label {
     font-weight   : 500;
 }
 
+/*=============================
+	Hero (Icó Real Parque)
+===============================*/
+.hero-bg::before {
+    background:
+        linear-gradient(90deg, rgba(15, 15, 15, 0.82) 0%, rgba(15, 15, 15, 0.55) 48%, rgba(15, 15, 15, 0.12) 100%),
+        linear-gradient(180deg, rgba(15, 15, 15, 0.3) 0%, rgba(15, 15, 15, 0.1) 45%, rgba(15, 15, 15, 0.4) 100%);
+}
+
+
+.hero-kicker {
+    display       : inline-block;
+    color         : var(--tg-primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size     : 14px;
+    font-weight   : 600;
+    margin-bottom : 22px;
+    text-shadow   : 0 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+.hero-kicker-accent {
+    color: var(--tg-accent-color);
+}
+
+.hero-title {
+    font-size     : 54px;
+    line-height   : 1.2;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    color         : var(--tg-white);
+    margin-bottom : 24px;
+    text-shadow   : 0 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    width      : 90%;
+    max-width  : 540px;
+    margin     : 0 0 40px;
+    color      : rgba(255, 255, 255, 0.92);
+    font-size  : 16px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+.hero-content .btn {
+    padding      : 24px 52px;
+    font-size    : 16px;
+    box-shadow   : 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.hero-content .btn_m {
+    height: 1.15rem;
+}
+
+.hero-content .btn:hover {
+    background  : var(--tg-primary-color-dark);
+    border-color: var(--tg-primary-color-dark);
+}
+
+/*=============================
+	Destaques do Hero (Icó Real Parque)
+===============================*/
+.hero-destaques-area {
+    padding   : 22px 0 5px;
+    background: var(--tg-accent-color);
+}
+
+.hero-destaque-item {
+    display      : flex;
+    align-items  : center;
+    gap          : 16px;
+    margin-bottom: 20px;
+}
+
+.hero-destaque-item .icon {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    flex-shrink     : 0;
+    width           : 56px;
+    height          : 56px;
+    border-radius   : 50%;
+    color           : var(--tg-primary-color);
+    background-color: var(--tg-white);
+}
+
+.hero-destaque-item p {
+    margin     : 0;
+    font-weight: 400;
+    color      : var(--tg-black);
+    opacity: .7;
+}
+
+@media (max-width: 991.98px) {
+    .hero-title {
+        font-size: 34px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 27px;
+    }
+}
+
+/*=============================
+	Plantas (Icó Real Parque)
+===============================*/
+.plans-area {
+    background: var(--tg-primary-color-light);
+}
+
+.plan-card {
+    display        : flex;
+    flex-direction  : column;
+    align-items     : center;
+    background-color: var(--tg-body-background-color);
+    border-radius   : 15px;
+    padding         : 45px 30px;
+    margin-bottom   : 30px;
+}
+
+.plan-card .feature-icon {
+    margin-bottom: 25px;
+}
+
+.plan-rooms {
+    display       : block;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size     : 14px;
+    font-weight   : 500;
+    color         : var(--tg-body-font-color);
+    margin-bottom : 8px;
+}
+
+.plan-size {
+    font-size    : 40px;
+    color        : var(--tg-heading-font-color);
+    margin-bottom: 0;
+}
+
+.plans-area .title {
+    color        : var(--tg-white);
+}
+
+.plans-note {
+    color        : var(--tg-white);
+    margin   : 10px auto;
+    margin-bottom: 0;
+    max-width: 470px;
+}
+
+.plantas-gallery {
+    margin-bottom : 0;
+    padding-bottom: 50px;
+}
+
+.plantas-cards-row {
+    margin-top: 60px;
+}
+
+.plantas-gallery .gallery-item {
+    margin: 0;
+}
+
+.plantas-gallery .gallery-item img {
+    height          : 320px;
+    width           : 100%;
+    border-radius   : 16px;
+    object-fit      : contain;
+    background-color: var(--tg-body-background-color);
+    padding         : 20px;
+}
+
+.plantas-gallery-pagination.swiper-pagination {
+    position  : static;
+    margin-top: 10px;
+}
+
+.plantas-gallery-pagination .swiper-pagination-bullet-active {
+    background: var(--tg-primary-color);
+}
+
+.plantas-gallery-wrap {
+    position: relative;
+}
+
+.plantas-gallery-inner {
+    position: relative;
+}
+
+.plantas-gallery-inner .plantas-gallery-prev,
+.plantas-gallery-inner .plantas-gallery-next {
+    position       : absolute;
+    top            : 50%;
+    width          : 48px;
+    height         : 48px;
+    margin         : 0;
+    border         : none;
+    border-radius  : 50%;
+    background     : var(--tg-primary-color);
+    color          : var(--tg-white);
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    z-index        : 2;
+    cursor         : pointer;
+    box-shadow     : 0 6px 16px rgba(25, 1, 0, 0.18);
+    transition     : background .3s ease;
+}
+
+.plantas-gallery-inner .plantas-gallery-prev {
+    left     : 0;
+    transform: translate(-50%, -50%);
+}
+
+.plantas-gallery-inner .plantas-gallery-next {
+    right    : 0;
+    transform: translate(50%, -50%);
+}
+
+.plantas-gallery-inner .plantas-gallery-prev::after,
+.plantas-gallery-inner .plantas-gallery-next::after {
+    display: none;
+}
+
+.plantas-gallery-inner .plantas-gallery-prev:hover,
+.plantas-gallery-inner .plantas-gallery-next:hover {
+    background: var(--tg-primary-color-dark);
+    color     : var(--tg-white);
+}
+
+.plantas-gallery-prev.swiper-button-disabled,
+.plantas-gallery-next.swiper-button-disabled {
+    opacity: .4;
+    cursor : default;
+}
+
+.diferenciais-gallery {
+    padding-bottom: 50px;
+}
+
+.diferenciais-gallery .gallery-item {
+    margin: 0;
+}
+
+.diferenciais-gallery .gallery-item img {
+    height       : 320px;
+    width        : 100%;
+    border-radius: 16px;
+    object-fit   : cover;
+}
+
+.diferenciais-gallery-pagination.swiper-pagination {
+    position  : static;
+    margin-top: 10px;
+}
+
+.diferenciais-gallery-pagination .swiper-pagination-bullet-active {
+    background: var(--tg-primary-color);
+}
+
+.diferenciais-gallery-wrap {
+    position: relative;
+}
+
+.diferenciais-gallery-inner {
+    position: relative;
+}
+
+.diferenciais-gallery-inner .diferenciais-gallery-prev,
+.diferenciais-gallery-inner .diferenciais-gallery-next {
+    position       : absolute;
+    top            : 50%;
+    width          : 48px;
+    height         : 48px;
+    margin         : 0;
+    border         : none;
+    border-radius  : 50%;
+    background     : var(--tg-primary-color);
+    color          : var(--tg-white);
+    display        : none;
+    align-items    : center;
+    justify-content: center;
+    z-index        : 2;
+    cursor         : pointer;
+    box-shadow     : 0 6px 16px rgba(25, 1, 0, 0.18);
+    transition     : background .3s ease;
+}
+
+.diferenciais-gallery-inner .diferenciais-gallery-prev {
+    left     : 0;
+    transform: translate(-50%, -50%);
+}
+
+.diferenciais-gallery-inner .diferenciais-gallery-next {
+    right    : 0;
+    transform: translate(50%, -50%);
+}
+
+.diferenciais-gallery-inner .diferenciais-gallery-prev::after,
+.diferenciais-gallery-inner .diferenciais-gallery-next::after {
+    display: none;
+}
+
+.diferenciais-gallery-inner .diferenciais-gallery-prev:hover,
+.diferenciais-gallery-inner .diferenciais-gallery-next:hover {
+    background: var(--tg-primary-color-dark);
+    color     : var(--tg-white);
+}
+
+.diferenciais-gallery-prev.swiper-button-disabled,
+.diferenciais-gallery-next.swiper-button-disabled {
+    opacity: .4;
+    cursor : default;
+}
+
+.diferenciais-cards-row {
+    margin-top: 60px;
+}
+
+/*=============================
+	Condições (Icó Real Parque)
+===============================*/
+.conditions-area {
+    background: var(--tg-secondary-color);
+}
+
+.conditions-area .section-title .sub-title {
+    color: var(--tg-primary-color);
+}
+
+.conditions-area .section-title .sub-title-accent {
+    color: var(--tg-accent-color);
+}
+
+.conditions-area .section-title .title {
+    color: var(--tg-white);
+}
+
+.conditions-area .btn:hover {
+    background  : var(--tg-primary-color-dark);
+    border-color: var(--tg-primary-color-dark);
+}
+
+.conditions-img img {
+    width        : 100%;
+    height       : 460px;
+    object-fit   : cover;
+    border-radius: 16px;
+}
+
+.conditions-content {
+    margin-left: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .conditions-img img {
+        height: 360px;
+    }
+
+    .conditions-content {
+        margin-left: 0;
+        margin-top : 40px;
+    }
+}
+
+.conditions-list {
+    margin       : 0 0 45px;
+    padding      : 0;
+    display      : flex;
+    flex-direction: column;
+    gap          : 22px;
+}
+
+.conditions-list li {
+    display    : flex;
+    align-items: center;
+    gap        : 16px;
+    list-style : none;
+}
+
+.conditions-list .icon {
+    display    : flex;
+    flex-shrink: 0;
+    color      : var(--tg-primary-color);
+    line-height: 0;
+}
+
+.conditions-list .text {
+    color    : var(--tg-white);
+    font-size: 17px;
+}
+
+/*=============================
+	Localização (Icó Real Parque)
+===============================*/
+#localizacao.direction-area {
+    display: flex;
+    align-items: stretch;
+}
+
+#localizacao .direction-img {
+    flex     : 0 0 50%;
+    max-width: 50%;
+}
+
+#localizacao .direction-img iframe {
+    display: block;
+    width  : 100%;
+    height : 100%;
+    border : 0;
+}
+
+#localizacao .direction-content-wrap {
+    flex           : 0 0 50%;
+    max-width      : 50%;
+    display        : flex;
+    align-items    : center;
+    padding        : 100px 80px;
+}
+
+#localizacao .direction-content {
+    width: 100%;
+}
+
+#localizacao .direction-content p {
+    margin-bottom:  40px;
+}
+
+@media (max-width: 991.98px) {
+    #localizacao.direction-area {
+        flex-direction: column;
+    }
+
+    #localizacao .direction-img,
+    #localizacao .direction-content-wrap {
+        flex     : 0 0 100%;
+        max-width: 100%;
+    }
+
+    #localizacao .direction-img {
+        height: 420px;
+    }
+
+    #localizacao .direction-content-wrap {
+        padding: 60px 24px;
+    }
+}
+
+/*=============================
+	Fancybox (Icó Real Parque)
+===============================*/
+.gallery-item a {
+    display: block;
+    height : 100%;
+    cursor : zoom-in;
+}
+
+/*=============================
+	Galeria - Apresentação (Icó Real Parque)
+===============================*/
+.apresentacao-gallery {
+    padding-bottom: 50px;
+}
+
+.apresentacao-gallery .gallery-item {
+    margin: 0;
+}
+
+.apresentacao-gallery .gallery-item img {
+    height       : 320px;
+    width        : 100%;
+    border-radius: 16px;
+    object-fit   : cover;
+}
+
+.apresentacao-gallery-pagination.swiper-pagination {
+    position : static;
+    margin-top: 10px;
+}
+
+.apresentacao-gallery-pagination .swiper-pagination-bullet-active {
+    background: var(--tg-primary-color);
+}
+
+.apresentacao-gallery-wrap {
+    position: relative;
+}
+
+.apresentacao-gallery-inner {
+    position: relative;
+}
+
+.apresentacao-gallery-inner .apresentacao-gallery-prev,
+.apresentacao-gallery-inner .apresentacao-gallery-next {
+    position   : absolute;
+    top        : 50%;
+    width      : 48px;
+    height     : 48px;
+    margin     : 0;
+    border     : none;
+    border-radius: 50%;
+    background : var(--tg-primary-color);
+    color      : var(--tg-white);
+    display    : flex;
+    align-items: center;
+    justify-content: center;
+    z-index    : 2;
+    cursor     : pointer;
+    box-shadow : 0 6px 16px rgba(25, 1, 0, 0.18);
+    transition : background .3s ease;
+}
+
+.apresentacao-gallery-inner .apresentacao-gallery-prev {
+    left     : 0;
+    transform: translate(-50%, -50%);
+}
+
+.apresentacao-gallery-inner .apresentacao-gallery-next {
+    right    : 0;
+    transform: translate(50%, -50%);
+}
+
+.apresentacao-gallery-inner .apresentacao-gallery-prev::after,
+.apresentacao-gallery-inner .apresentacao-gallery-next::after {
+    display: none;
+}
+
+.apresentacao-gallery-inner .apresentacao-gallery-prev:hover,
+.apresentacao-gallery-inner .apresentacao-gallery-next:hover {
+    background: var(--tg-primary-color-dark);
+    color     : var(--tg-white);
+}
+
+.apresentacao-gallery-prev.swiper-button-disabled,
+.apresentacao-gallery-next.swiper-button-disabled {
+    opacity: .4;
+    cursor : default;
+}
+
+.apresentacao-icons-row {
+    margin-top: 60px;
+}
+
+/*=============================
+	Formulário de Interesse (Icó Real Parque)
+===============================*/
+.newsletter-form .list-wrap li select {
+    width        : 100%;
+    border       : 1.3px solid;
+    border-color : var(--tg-secondary-color);
+    border-radius: 8px;
+    font-size    : 15px;
+    color        : var(--tg-secondary-color);
+    padding      : 13px 25px;
+    height       : 56px;
+    background   : transparent;
+}
+
+#interesse .newsletter-form .list-wrap {
+    flex-direction: column;
+    margin        : 0;
+}
+
+#interesse .newsletter-form .list-wrap li {
+    flex         : 0 0 100%;
+    width        : 100%;
+    padding      : 0;
+}
+
+#interesse .newsletter-form .list-wrap li.submit-btn {
+    flex-grow: 0;
+    margin-top: 5px;
+}
+
+#interesse .newsletter-form .list-wrap li.submit-btn input[type="submit"] {
+    width: 100%;
+}
+
+/*=============================
+	Header (Icó Real Parque)
+===============================*/
+.transparent-header:not(.sticky-menu) .navbar-wrap ul li a,
+.transparent-header:not(.sticky-menu) .header-contact a {
+    color: var(--tg-white);
+}
+
+.menu-style-three .logo img {
+    max-height: 64px;
+    width     : auto;
+}
+
 .banner-area-eight .row {
     flex-wrap  : nowrap;
     align-items: center;
@@ -2412,13 +3015,12 @@ label {
     font-size     : 14px;
     font-weight   : 500;
     display       : block;
-    color         : var(--tg-secondary-color);
+    color         : var(--tg-primary-color);
     margin-bottom : 15px;
 }
 
 .section-title .title {
     font-size     : 48px;
-    text-transform: uppercase;
     margin-bottom : 0;
     line-height   : 1.29;
 }
@@ -2619,6 +3221,10 @@ label {
     color      : var(--tg-white);
     font-size  : 48px;
     line-height: 0;
+}
+
+.feature-icon svg {
+    color: var(--tg-white);
 }
 
 .feature-content .title {
@@ -3622,6 +4228,73 @@ label {
     margin-bottom: 0;
 }
 
+/*=============================
+	Whatsapp btn
+===============================*/
+#whatsapp-button {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    position       : fixed;
+    right          : 30px;
+    bottom         : 30px;
+    width          : 64px;
+    height         : 64px;
+    background     : #25D366;
+    color          : var(--tg-white);
+    border-radius  : 50%;
+    text-decoration: none;
+    cursor         : pointer;
+    z-index        : 999;
+    box-shadow     : 0 6px 16px rgba(0, 0, 0, 0.25);
+    -webkit-animation: pulseWhatsapp 2s infinite;
+    animation      : pulseWhatsapp 2s infinite;
+    transition     : transform .3s ease, background .3s ease;
+}
+
+#whatsapp-button svg {
+    width : 32px;
+    height: 32px;
+}
+
+#whatsapp-button:hover {
+    transform : translateY(-5px);
+    background: #1ebe5a;
+}
+
+@media (max-width: 767.98px) {
+    #whatsapp-button {
+        right : 18px;
+        bottom: 18px;
+        width : 52px;
+        height: 52px;
+    }
+
+    #whatsapp-button svg {
+        width : 26px;
+        height: 26px;
+    }
+}
+
+@-webkit-keyframes pulseWhatsapp {
+    from {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .4)
+    }
+
+    to {
+        box-shadow: 0 0 0 35px rgba(37, 211, 102, .01)
+    }
+}
+
+@keyframes pulseWhatsapp {
+    from {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, .4)
+    }
+
+    to {
+        box-shadow: 0 0 0 35px rgba(37, 211, 102, .01)
+    }
+}
 
 
 /*=============================
@@ -4441,6 +5114,10 @@ label {
     margin-bottom: 40px;
 }
 
+.footer-logo img {
+    width: 150px;
+}
+
 .fw-title {
     color         : var(--tg-white);
     font-size     : 22px;
@@ -4483,6 +5160,11 @@ label {
 
 .footer-newsletter form {
     position: relative;
+}
+
+.footer-newsletter .btn:hover {
+    background  : var(--tg-primary-color-dark);
+    border-color: var(--tg-primary-color-dark);
 }
 
 .footer-newsletter input {

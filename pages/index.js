@@ -1,27 +1,27 @@
 import Layout from "@/components/layout/Layout"
-import About from "@/components/sections/About"
-import Blog from "@/components/sections/Blog"
-import Brand from "@/components/sections/Brand"
-import Features from "@/components/sections/Features"
-import Newsletter from "@/components/sections/Newsletter"
-import Project from "@/components/sections/Project"
-import Slider from "@/components/sections/Slider"
-import Testimonial from "@/components/sections/Testimonial"
-import Video from "@/components/sections/Video"
+import SEO from "@/components/layout/SEO"
+import Apresentacao from "@/components/sections/Apresentacao"
+import Condicoes from "@/components/sections/Condicoes"
+import Diferenciais from "@/components/sections/Diferenciais"
+import Hero from "@/components/sections/Hero"
+import HeroDestaques from "@/components/sections/HeroDestaques"
+import Interesse from "@/components/sections/Interesse"
+import Localizacao from "@/components/sections/Localizacao"
+import Plantas from "@/components/sections/Plantas"
 export default function Home1() {
 
     return (
         <>
-            <Layout headerStyle={1}>
-                <Slider />
-                <About />
-                <Brand />
-                <Video />
-                <Features />
-                <Project />
-                <Testimonial />
-                <Blog />
-                <Newsletter />
+            <Layout headerStyle={3} headTitle="Edifício ICÓ Real Parque – Apartamentos na Zona Sul de SP">
+                <SEO />
+                <Hero />
+                <HeroDestaques />
+                <Apresentacao />
+                <Plantas />
+                <Diferenciais />
+                <Condicoes />
+                <Localizacao />
+                <Interesse />
             </Layout>
         </>
     )

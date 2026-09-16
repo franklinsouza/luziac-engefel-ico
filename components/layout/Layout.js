@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import BackToTop from '../elements/BackToTop'
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.js"
+import { WhatsappLogoIcon } from "@phosphor-icons/react/dist/csr/WhatsappLogo"
 import Breadcrumb from './Breadcrumb'
 import Footer from './Footer'
 import Header1 from './Header1'
@@ -20,6 +21,23 @@ export default function Layout({ headerStyle, headTitle, breadcrumbTitle, childr
             live: false
         })
         window.wow.init()
+    }, [])
+
+    useEffect(() => {
+        Fancybox.bind("[data-fancybox]", {
+            Carousel: {
+                Toolbar: {
+                    display: {
+                        left: ["infobar"],
+                        middle: [],
+                        right: ["close"],
+                    },
+                },
+            },
+        })
+        return () => {
+            Fancybox.destroy()
+        }
     }, [])
 
     // Mobile Menu
@@ -58,7 +76,11 @@ export default function Layout({ headerStyle, headTitle, breadcrumbTitle, childr
             </main>
             {noFooter ? null : < Footer />}
 
-            <BackToTop />
+            <a id="whatsapp-button" className="show"
+                href="https://wa.me/5511994007684?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Edif%C3%ADcio%20Ic%C3%B3%20Real%20Parque."
+                target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp sobre o Edifício Icó Real Parque">
+                <WhatsappLogoIcon weight="regular" />
+            </a>
         </>
     )
 }

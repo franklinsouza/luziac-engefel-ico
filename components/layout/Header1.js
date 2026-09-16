@@ -21,7 +21,7 @@ export default function Header1({ handleMobileMenu, scroll }) {
                                             <div className="col-xl-8">
                                                 <div className="logo mobile-logo d-none">
                                                     <Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                                                    <Link href="/" className="d-none sticky-logo"><img src="/assets/img/logo/logo02.png" alt="Logo" /></Link>
+                                                    <Link href="/" className="d-none sticky-logo"><img src="/assets/img/logo/logo-ico.png" alt="Logo" /></Link>
                                                 </div>
                                                 <div className="navbar-wrap main-menu d-none d-lg-flex">
                                                     <ul className="navigation">
@@ -57,9 +57,9 @@ export default function Header1({ handleMobileMenu, scroll }) {
                                                     <div className="logo">
                                                         <Link href="/"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
                                                     </div>
-                                                    <div className="logo d-none">
-                                                        <Link href="/"><img src="/assets/img/logo/logo02.png" alt="Logo" /></Link>
-                                                    </div>
+<div className="logo d-none">
+    <Link href="/"><img src="/assets/img/logo/logo-ico.png" alt="Logo" /></Link>
+</div>
                                                     <ul className="navigation right">
                                                         <li className="menu-item-has-children"><Link href="/#">blog</Link>
                                                             <ul className="sub-menu">
@@ -93,9 +93,9 @@ export default function Header1({ handleMobileMenu, scroll }) {
                                 <div className="mobile-menu">
                                     <nav className="menu-box">
                                         <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times" /></div>
-                                        <div className="nav-logo">
-                                            <Link href="/"><img src="/assets/img/logo/logo02.png" alt="Logo" /></Link>
-                                        </div>
+<div className="nav-logo">
+    <Link href="/"><img src="/assets/img/logo/logo-ico.png" alt="Logo" /></Link>
+</div>
                                         <div className="menu-outer">
                                             <MobileMenu />
                                         </div>
