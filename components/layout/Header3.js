@@ -14,15 +14,18 @@ export default function Header3({ handleMobileMenu, scroll }) {
                                 <div className="menu-wrap">
                                     <nav className="menu-nav">
                                         <div className="row g-0 align-items-center">
-                                            <div className="col-lg-2">
+                                            <div className="col-lg-3">
                                                 <div className="logo">
                                                     <Link href="/">
                                                         <img src={scroll ? "/assets/img/logo/logo-ico.png" : "/assets/img/logo/logo-branco-ico.png"} alt="Logo" />
                                                     </Link>
+                                                    {scroll ? (
+                                                        <img className="menu-mcmv-logo" src="/assets/img/logo-mcmv-preto-horizontal.webp" alt="Selo do Programa Minha Casa Minha Vida" />
+                                                    ) : null}
                                                 </div>
                                             </div>
-                                            <div className="col-lg-10">
-                                                <div className="navbar-wrap main-menu d-none d-lg-flex">
+                                            <div className="col-lg-9">
+                                                <div className="navbar-wrap main-menu d-none d-xl-flex">
                                                     <Menu />
                                                 </div>
                                             </div>

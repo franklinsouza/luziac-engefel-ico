@@ -1,11 +1,11 @@
 import Head from 'next/head'
 
-const SITE_URL = 'https://www.engefel.com.br'
+const SITE_URL = 'https://www.edificioico.com.br'
 const TITLE = 'Edifício ICÓ Real Parque – Apartamentos na Zona Sul de SP'
 const DESCRIPTION = 'Apartamentos de 1 e 2 dormitórios com lazer no terraço e financiamento facilitado pela Caixa, no Real Parque, Zona Sul de São Paulo. Condições especiais para o primeiro imóvel.'
 const KEYWORDS = ['apartamento 1 dormitório São Paulo', 'apartamento 2 dormitórios São Paulo', 'Edifício Icó Real Parque', 'apartamento Zona Sul São Paulo', 'financiamento Caixa Econômica Federal', 'FGTS primeiro imóvel', 'apartamento em obras Real Parque', 'imóveis Engefel', 'sair do aluguel São Paulo']
 const IMAGE = `${SITE_URL}/assets/img/og-image.png`
-const PHONE = '(11) 93714-6936'
+const PHONE = '(11) 94798-4300'
 const ADDRESS = 'Av. Barão de Monte Mor, 121 – Real Parque, São Paulo/SP'
 
 const JSON_LD = `{

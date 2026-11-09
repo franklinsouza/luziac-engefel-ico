@@ -77,7 +77,7 @@ export default function Layout({ headerStyle, headTitle, breadcrumbTitle, childr
             {noFooter ? null : < Footer />}
 
             <a id="whatsapp-button" className="show"
-                href="https://wa.me/5511994007684?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Edif%C3%ADcio%20Ic%C3%B3%20Real%20Parque."
+                href="https://wa.me/5511947984300?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Edif%C3%ADcio%20Ic%C3%B3%20Real%20Parque."
                 target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp sobre o Edifício Icó Real Parque">
                 <WhatsappLogoIcon weight="regular" />
             </a>

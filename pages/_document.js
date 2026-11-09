@@ -10,6 +10,9 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
+                <script dangerouslySetInnerHTML={{ __html: "window.trackerConfig = { site: 'ico-real-parque' };" }} />
+                <script src="https://luziac-static.vercel.app/tracker/v1/tracker.js" defer />
+                <script src="https://luziac-static.vercel.app/mailer/v1/mailer.js" defer></script>
             </body>
         </Html>
     )

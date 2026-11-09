@@ -89,16 +89,16 @@
 ##  1\. Hero
 
 Título:  
-Realize o sonho da casa própria com condições que cabem no seu bolso\!
+O Icó Real Parque te entrega tudo: localização, lazer e possibilidades
 
 Texto de apoio:  
-Chegou a hora de sair do aluguel e conquistar seu primeiro imóvel em uma das melhores localizações de São Paulo.
+Seu primeiro imóvel em uma das regiões mais estratégicas da Zona Sul de São Paulo, com plantas inteligentes, acabamento de qualidade e condições facilitadas de financiamento. 
 
 Informações principais:
 
-* Edifício Icó Real Parque  
 * Plantas de 1 e 2 dormitórios  
-* Condições especiais para o primeiro imóvel
+* Condições especiais para o primeiro imóvel  
+* O endereço já diz tudo 
 
 CTA:  
 Tenho interesse
@@ -109,26 +109,44 @@ Tenho interesse
 
 O Edifício Icó Real Parque é ideal para quem busca conforto, praticidade e mobilidade.
 
-* Torre única  
-* Plantas inteligentes  
-* Excelente custo-benefício
+#### TORRE ÚNICA
+
+Um projeto exclusivo, com mais privacidade e tranquilidade.
+
+#### PLANTAS INTELIGENTES
+
+Layouts funcionais que valorizam o conforto e tornam cada ambiente mais aproveitável.
+
+#### ALTO PADRÃO AO SEU ALCANCE
+
+Acabamento, localização e lazer diferenciados com condições que facilitam a compra.
 
 ---
 
 ### 3\. Plantas disponíveis
 
 * 1 dormitório: 39,27 m²  
-* 2 dormitórios: 41,32 m²
+* 2 dormitórios: 41,32 m² 
+
+Plantas inteligentes para diferentes momentos da sua vida.
+
+Escolha a configuração que mais combina com a sua rotina e aproveite cada metro quadrado do seu novo lar.
 
 ---
 
 ### 4\. Diferenciais e área de lazer
 
-Área de lazer completa no terraço, com:
+### **Seu lazer nas alturas**
 
-* Piscina  
+No rooftop do Icó Real Parque, você encontra espaços para relaxar, comemorar e aproveitar melhor seus dias.
+
+### Estrutura de lazer
+
+* Piscina no rooftop  
 * Churrasqueira  
 * Salão de festas
+
+Um projeto que valoriza o seu bem-estar e transforma os momentos simples em experiências ainda melhores.
 
 ---
 
@@ -150,6 +168,15 @@ Av. Barão de Monte Mor, 121 – Real Parque, São Paulo/SP
 
 Destaque:  
 Localização estratégica para quem busca praticidade e mobilidade\!
+
+Destaques de localização
+
+* Próximo à Marginal Pinheiros  
+* Fácil acesso à região da Berrini  
+* Proximidade do Morumbi  
+* A poucos minutos da Ponte Estaiada  
+* Próximo a shoppings, serviços e comércio  
+* Mobilidade para diferentes regiões de São Paulo
 
 ---
 

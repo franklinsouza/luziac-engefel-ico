@@ -485,6 +485,7 @@ label {
 ===============================*/
 .custom-container {
     max-width: 1800px;
+    position: relative;
 }
 
 .custom-container-two {
@@ -834,12 +835,27 @@ label {
     margin: 0 0 0 auto;
 }
 
+.menu-style-three .navbar-wrap>ul>li:last-child a {
+    padding-right: 0;
+}
+
 .menu-style-three .logo {
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-style-three .logo img.menu-mcmv-logo {
+    flex-shrink: 0;
+    max-height : 30px;
+    width      : auto;
+    margin-left: 8px;
 }
 
 .menu-style-three.sticky-menu .logo {
-    display: block;
+    display  : flex;
+    flex-wrap: nowrap;
 }
 
 .fullscreen-menu .offNav {
@@ -1758,7 +1774,8 @@ label {
 }
 
 .single-slider {
-    min-height : 100vh;
+    height : 100vh;
+    min-height: 740px;
     padding    : 100px 0;
     display    : flex !important;
     align-items: center;
@@ -2326,15 +2343,55 @@ label {
         linear-gradient(180deg, rgba(15, 15, 15, 0.3) 0%, rgba(15, 15, 15, 0.1) 45%, rgba(15, 15, 15, 0.4) 100%);
 }
 
+.hero-bg-video {
+    position     : absolute;
+    left         : 0;
+    top          : 0;
+    width        : 100%;
+    height       : 100%;
+    object-fit   : cover;
+    z-index      : -2;
+    pointer-events: none;
+}
+
+
+.hero-brand {
+    display      : flex;
+    align-items  : center;
+    gap          : 24px;
+    margin-bottom: 26px;
+}
+
+.hero-mcmv-badge {
+    flex-shrink  : 0;
+    display      : flex;
+    align-items  : center;
+    justify-content: center;
+    width        : 75px;
+    height       : 75px;
+    padding      : 11px;
+    background   : var(--tg-white);
+    border-radius: 11px;
+    box-shadow   : 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero-mcmv-badge img {
+    display   : block;
+    max-width : 100%;
+    max-height: 100%;
+    height    : auto;
+}
 
 .hero-kicker {
-    display       : inline-block;
+    display       : flex;
+    flex-direction: column;
+    gap           : 6px;
+    line-height   : 1.2;
     color         : var(--tg-primary-color);
     text-transform: uppercase;
     letter-spacing: 0.14em;
     font-size     : 14px;
     font-weight   : 600;
-    margin-bottom : 22px;
     text-shadow   : 0 2px 10px rgba(0, 0, 0, 0.55);
 }
 
@@ -2374,6 +2431,37 @@ label {
 .hero-content .btn:hover {
     background  : var(--tg-primary-color-dark);
     border-color: var(--tg-primary-color-dark);
+}
+
+@media (max-width: 767.98px) {
+    .hero-brand {
+        gap: 16px;
+    }
+
+    .hero-mcmv-badge {
+        width        : 84px;
+        height       : 78px;
+        padding      : 9px;
+        border-radius: 14px;
+    }
+
+    .hero-kicker {
+        font-size: 12px;
+    }
+}
+
+.hero-disclaimer {
+    position     : absolute;
+    left         : 50%;
+    bottom       : 22px;
+    transform    : translateX(-50%);
+    z-index      : 2;
+    color        : rgba(255, 255, 255, 0.85);
+    font-size    : 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-shadow  : 0 1px 6px rgba(0, 0, 0, 0.6);
+    white-space  : nowrap;
 }
 
 /*=============================
@@ -2467,11 +2555,24 @@ label {
     color        : var(--tg-white);
 }
 
+.plans-area .section-title p {
+    color: var(--tg-white);
+}
+
+.plans-ornament {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 40px;
+    color          : var(--tg-primary-color-dark);
+}
+
 .plans-note {
-    color        : var(--tg-white);
-    margin   : 10px auto;
-    margin-bottom: 0;
-    max-width: 470px;
+    font-family   : var(--tg-heading-font-family);
+    font-size     : 26px;
+    line-height   : 1.4;
+    color         : var(--tg-white);
+    margin        : 18px auto 0;
+    max-width: 600px;
 }
 
 .plantas-gallery {
@@ -2643,6 +2744,20 @@ label {
     margin-top: 60px;
 }
 
+.diferenciais-lead {
+    max-width: 450px;
+    margin   : 20px auto 0;
+}
+
+.diferenciais-note {
+    font-family: var(--tg-heading-font-family);
+    font-size  : 26px;
+    line-height: 1.4;
+    color      : var(--tg-heading-font-color);
+    margin     : 18px auto 0;
+    max-width  : 600px;
+}
+
 /*=============================
 	Condições (Icó Real Parque)
 ===============================*/
@@ -2667,11 +2782,35 @@ label {
     border-color: var(--tg-primary-color-dark);
 }
 
+.conditions-area .btn {
+    font-size: 12px;
+}
+
+.conditions-img {
+    position: relative;
+}
+
 .conditions-img img {
     width        : 100%;
     height       : 460px;
     object-fit   : cover;
     border-radius: 16px;
+}
+
+.conditions-img span {
+    position     : absolute;
+    right        : 12px;
+    bottom       : 12px;
+    z-index      : 2;
+    color        : rgba(255, 255, 255, 0.85);
+    font-size    : 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow  : 0 1px 6px rgba(0, 0, 0, 0.6);
+    background   : rgba(15, 15, 15, 0.35);
+    border-radius: 6px;
+    padding      : 4px 8px;
+    pointer-events: none;
 }
 
 .conditions-content {
@@ -2695,6 +2834,7 @@ label {
     display      : flex;
     flex-direction: column;
     gap          : 22px;
+    max-width: 440px;
 }
 
 .conditions-list li {
@@ -2725,8 +2865,8 @@ label {
 }
 
 #localizacao .direction-img {
-    flex     : 0 0 50%;
-    max-width: 50%;
+    flex     : 0 0 40%;
+    max-width: 40%;
 }
 
 #localizacao .direction-img iframe {
@@ -2737,11 +2877,11 @@ label {
 }
 
 #localizacao .direction-content-wrap {
-    flex           : 0 0 50%;
-    max-width      : 50%;
+    flex           : 0 0 60%;
+    max-width      : 60%;
     display        : flex;
     align-items    : center;
-    padding        : 100px 80px;
+    padding        : 80px 63px 80px 63px;
 }
 
 #localizacao .direction-content {
@@ -2750,6 +2890,51 @@ label {
 
 #localizacao .direction-content p {
     margin-bottom:  40px;
+}
+
+#localizacao .location-list {
+    display      : flex;
+    flex-wrap    : wrap;
+    gap          : 14px 24px;
+    margin       : 0 0 40px;
+    padding      : 0;
+}
+
+#localizacao .location-list li {
+    display    : flex;
+    align-items: start;
+    gap        : 10px;
+    list-style : none;
+    padding    : 12px 14px;
+    border     : 1px solid rgba(15, 15, 15, 0.08);
+    border-radius: 10px;
+    flex       : 1 1 calc(50% - 24px);
+    max-width  : calc(50% - 24px);
+}
+
+#localizacao .location-list .icon {
+    display    : flex;
+    flex-shrink: 0;
+    color      : var(--tg-primary-color);
+    line-height: 0;
+    margin-top: 5px;
+}
+
+#localizacao .location-list .text {
+    color    : var(--tg-body-font-color);
+    font-size: 15px;
+}
+
+#localizacao .location-list .text strong {
+    color    : var(--tg-primary-color);
+    font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+    #localizacao .location-list li {
+        flex     : 1 1 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -2765,6 +2950,7 @@ label {
 
     #localizacao .direction-img {
         height: 420px;
+        flex  : 0 0 auto;
     }
 
     #localizacao .direction-content-wrap {
@@ -2772,13 +2958,55 @@ label {
     }
 }
 
+@media (max-width: 575.98px) {
+    #localizacao .direction-img {
+        height: 320px;
+    }
+}
+
 /*=============================
 	Fancybox (Icó Real Parque)
 ===============================*/
 .gallery-item a {
-    display: block;
-    height : 100%;
-    cursor : zoom-in;
+    display     : block;
+    height      : 100%;
+    cursor      : zoom-in;
+    position    : relative;
+}
+
+.plantas-gallery .gallery-item span,
+.apresentacao-gallery .gallery-item span,
+.diferenciais-gallery .gallery-item span {
+    position     : absolute;
+    right        : 12px;
+    bottom       : 12px;
+    z-index      : 2;
+    color        : rgba(255, 255, 255, 0.85);
+    font-size    : 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow  : 0 1px 6px rgba(0, 0, 0, 0.6);
+    background   : rgba(15, 15, 15, 0.35);
+    border-radius: 6px;
+    padding      : 4px 8px;
+    pointer-events: none;
+}
+
+.fancybox__container .f-panzoom__viewport::before {
+    content        : "Imagem meramente ilustrativa";
+    position       : absolute;
+    right          : 14px;
+    bottom         : 14px;
+    z-index        : 2;
+    color          : rgba(255, 255, 255, 0.9);
+    font-size      : 12px;
+    letter-spacing : 0.04em;
+    text-transform : uppercase;
+    text-shadow    : 0 1px 6px rgba(0, 0, 0, 0.6);
+    background     : rgba(15, 15, 15, 0.4);
+    border-radius  : 6px;
+    padding        : 5px 9px;
+    pointer-events : none;
 }
 
 /*=============================
@@ -2902,6 +3130,61 @@ label {
     width: 100%;
 }
 
+#interesse .newsletter-form .list-wrap li.submit-btn input[type="submit"]:disabled {
+    cursor: not-allowed;
+}
+
+/* Loader: o mailer.js desabilita o botão e marca o form com data-mail-state="enviando" */
+#interesse .newsletter-form .list-wrap li.submit-btn {
+    position: relative;
+}
+
+#interesse .newsletter-form[data-mail-state="enviando"] .list-wrap li.submit-btn input[type="submit"] {
+    color     : transparent;
+    background: var(--tg-primary-color);
+}
+
+#interesse .newsletter-form[data-mail-state="enviando"] .list-wrap li.submit-btn::after {
+    content       : "";
+    position      : absolute;
+    top           : 50%;
+    left          : 50%;
+    width         : 22px;
+    height        : 22px;
+    margin        : -11px 0 0 -11px;
+    border        : 2px solid rgba(255, 255, 255, .35);
+    border-top-color: var(--tg-white);
+    border-radius : 50%;
+    animation     : mailSpin .7s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes mailSpin {
+    to { transform: rotate(360deg); }
+}
+
+#interesse .newsletter-form .mail-honeypot {
+    position: absolute;
+    left    : -9999px;
+    width   : 1px;
+    height  : 1px;
+    opacity : 0;
+}
+
+#interesse .newsletter-form .mail-msg {
+    margin    : 15px 0 0;
+    font-size : 15px;
+    text-align: center;
+}
+
+#interesse .newsletter-form .mail-msg:empty {
+    display: none;
+}
+
+#interesse .newsletter-form[data-mail-state="erro"] .mail-msg {
+    color: #d93025;
+}
+
 /*=============================
 	Header (Icó Real Parque)
 ===============================*/
@@ -2911,7 +3194,7 @@ label {
 }
 
 .menu-style-three .logo img {
-    max-height: 64px;
+    max-height: 58px;
     width     : auto;
 }
 
@@ -4236,7 +4519,7 @@ label {
     align-items    : center;
     justify-content: center;
     position       : fixed;
-    right          : 30px;
+    right          : 53px;
     bottom         : 30px;
     width          : 64px;
     height         : 64px;
@@ -5116,6 +5399,14 @@ label {
 
 .footer-logo img {
     width: 150px;
+}
+
+.footer-logo .footer-mcmv-logo {
+    display       : block;
+    width         : 149px;
+    max-width     : 100%;
+    height        : auto;
+    margin-top    : 48px;
 }
 
 .fw-title {

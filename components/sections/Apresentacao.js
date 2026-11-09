@@ -1,21 +1,21 @@
 import { BuildingsIcon } from "@phosphor-icons/react/dist/csr/Buildings"
 import { PuzzlePieceIcon } from "@phosphor-icons/react/dist/csr/PuzzlePiece"
-import { SealPercentIcon } from "@phosphor-icons/react/dist/csr/SealPercent"
+import { DiamondIcon } from "@phosphor-icons/react/dist/csr/Diamond"
 import { CaretLeft } from "@phosphor-icons/react/dist/csr/CaretLeft"
 import { CaretRight } from "@phosphor-icons/react/dist/csr/CaretRight"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
 
 const galleryImages = [
+    { src: "/assets/img/empreendimento/empreendimento-1.webp", alt: "Entrada do Edifício Icó Real Parque, período noturno" },
+    { src: "/assets/img/empreendimento/empreendimento-10.webp", alt: "Sala de estar e jantar decorada" },
+    { src: "/assets/img/empreendimento/empreendimento-11.webp", alt: "Sala integrada com cozinha decorada" },
+    //{ src: "/assets/img/empreendimento/empreendimento-3.webp", alt: "Entrada do Edifício Icó Real Parque" },
     { src: "/assets/img/empreendimento/empreendimento-4.webp", alt: "Fachada do Edifício Icó Real Parque" },
     { src: "/assets/img/empreendimento/empreendimento-5.webp", alt: "Fachada do Edifício Icó Real Parque, vista lateral" },
     { src: "/assets/img/empreendimento/empreendimento-6.webp", alt: "Detalhe das varandas do Edifício Icó Real Parque" },
     { src: "/assets/img/empreendimento/empreendimento-7.webp", alt: "Elevação da fachada do Edifício Icó Real Parque" },
-    { src: "/assets/img/empreendimento/empreendimento-1.webp", alt: "Entrada do Edifício Icó Real Parque, período noturno" },
-    { src: "/assets/img/empreendimento/empreendimento-3.webp", alt: "Entrada do Edifício Icó Real Parque" },
     { src: "/assets/img/empreendimento/empreendimento-9.webp", alt: "Dormitório decorado" },
-    { src: "/assets/img/empreendimento/empreendimento-10.webp", alt: "Sala de estar e jantar decorada" },
-    { src: "/assets/img/empreendimento/empreendimento-11.webp", alt: "Sala integrada com cozinha decorada" },
     { src: "/assets/img/empreendimento/empreendimento-12.webp", alt: "Lavanderia e cozinha decoradas" },
     { src: "/assets/img/empreendimento/empreendimento-13.webp", alt: "Cozinha decorada" },
 ]
@@ -72,6 +72,7 @@ export default function Apresentacao() {
                                         <SwiperSlide className="gallery-item" key={image.src}>
                                             <a href={image.src} data-fancybox="gallery-empreendimento" data-caption={image.alt}>
                                                 <img src={image.src} alt={image.alt} />
+                                                <span>Imagem meramente ilustrativa</span>
                                             </a>
                                         </SwiperSlide>
                                     ))}
@@ -91,7 +92,7 @@ export default function Apresentacao() {
                             </div>
                             <div className="feature-content">
                                 <h2 className="title">Torre única</h2>
-                                <p>Mais privacidade e exclusividade, sem a movimentação de grandes condomínios.</p>
+                                <p>Um projeto exclusivo, com mais privacidade e tranquilidade.</p>
                             </div>
                         </div>
                     </div>
@@ -102,18 +103,18 @@ export default function Apresentacao() {
                             </div>
                             <div className="feature-content">
                                 <h2 className="title">Plantas inteligentes</h2>
-                                <p>Ambientes bem distribuídos que aproveitam cada metro quadrado do apartamento.</p>
+                                <p>Layouts funcionais que valorizam o conforto e tornam cada ambiente mais aproveitável.</p>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-sm-6">
                         <div className="features-item">
                             <div className="feature-icon">
-                                <SealPercentIcon size={44} weight="light" />
+                                <DiamondIcon size={44} weight="light" />
                             </div>
                             <div className="feature-content">
-                                <h2 className="title">Excelente custo-benefício</h2>
-                                <p>Condições facilitadas para você sair do aluguel e conquistar seu imóvel.</p>
+                                <h2 className="title">Alto padrão ao seu alcance</h2>
+                                <p>Acabamento, localização e lazer diferenciados com condições que facilitam a compra.</p>
                             </div>
                         </div>
                     </div>

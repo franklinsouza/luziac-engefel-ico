@@ -3,8 +3,7 @@ import Link from "next/link"
 import { CheckCircleIcon } from "@phosphor-icons/react/dist/csr/CheckCircle"
 
 const items = [
-    "Financiamento facilitado pela Caixa Econômica Federal",
-    "Condições especiais para aquisição do primeiro imóvel",
+    "Financiamento facilitado pelo Programa Minha Casa, Minha Vida",
     "Oportunidade para sair do aluguel e conquistar sua casa própria",
 ]
 
@@ -15,7 +14,8 @@ export default function Condicoes() {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="conditions-img">
-                            <img src="/assets/img/empreendimento/empreendimento-4.webp" alt="Fachada do Edifício Icó Real Parque" />
+                            <img src="/assets/img/empreendimento/empreendimento-11.webp" alt="Sala de estar e cozinha integradas do Edifício Icó Real Parque" />
+                            <span>Imagem meramente ilustrativa</span>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -32,7 +32,7 @@ export default function Condicoes() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href="#interesse" className="btn">
+                            <Link href="#interesse" className="btn" data-track="cta_click" data-track-cta="condicoes">
                                 <div className="btn_m">
                                     <div className="btn_c">
                                         <div className="btn_t1">Quero saber mais sobre as condições</div>

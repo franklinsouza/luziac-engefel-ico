@@ -28,11 +28,9 @@ function MyApp({ Component, pageProps }) {
 
     }, [])
     return (<>
-        {!loading ? (
-            <Component {...pageProps} />
-        ) : (
-            <Preloader />
-        )}
+        {/* Page always renders so SSR HTML carries the <Head> meta tags; preloader overlays it */}
+        <Component {...pageProps} />
+        {loading && <Preloader />}
     </>)
 }
 

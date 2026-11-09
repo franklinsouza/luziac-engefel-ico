@@ -12,20 +12,16 @@ export default function Interesse() {
                                             <span className="sub-title">Formulário de Interesse</span>
                                             <h2 className="title">Dê o primeiro passo <br /> para conquistar seu imóvel</h2>
                                         </div>
-                                        <form action="#" className="newsletter-form">
+                                        <form className="newsletter-form" data-mail-form="interesse">
                                             <ul className="list-wrap">
-                                                <li><input type="text" placeholder="Nome" required /></li>
-                                                <li><input type="tel" placeholder="Telefone/WhatsApp" required /></li>
-                                                <li><input type="email" placeholder="E-mail" required /></li>
-                                                <li>
-                                                    <select defaultValue="" required>
-                                                        <option value="" disabled>Tenho interesse em...</option>
-                                                        <option value="1-dormitorio">1 dormitório</option>
-                                                        <option value="2-dormitorios">2 dormitórios</option>
-                                                    </select>
-                                                </li>
+                                                <li><input type="text" name="Nome" placeholder="Nome" autoComplete="name" required /></li>
+                                                <li><input type="tel" name="Telefone" placeholder="Telefone/WhatsApp" autoComplete="tel" required /></li>
+                                                <li><input type="email" name="E-mail" placeholder="E-mail" autoComplete="email" required /></li>
                                                 <li className="submit-btn"><input type="submit" value="Enviar e falar com um especialista" /></li>
                                             </ul>
+                                            {/* Honeypot do mailer.js já no HTML: se o script o injetasse antes da hidratação, o React 19 recriaria a página */}
+                                            <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="mail-honeypot" />
+                                            <p className="mail-msg" data-mail-msg aria-live="polite" />
                                         </form>
                                     </div>
                                 </div>

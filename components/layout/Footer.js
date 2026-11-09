@@ -12,6 +12,7 @@ export default function Footer1({ }) {
                                     <div className="footer-widget">
                                         <div className="footer-logo">
                                             <Link href="/"><img src="/assets/img/logo/logo-branco-ico.png" alt="Icó Real Parque" /></Link>
+                                            <img className="footer-mcmv-logo" src="/assets/img/logo-mcmv-branco-horizontal.webp" alt="Selo do Programa Minha Casa Minha Vida" />
                                         </div>
                                     </div>
                                 </div>
@@ -21,9 +22,8 @@ export default function Footer1({ }) {
                                         <div className="footer-contact">
                                             <p>Av. Barão de Monte Mor, 121 <br /> Real Parque, São Paulo/SP</p>
                                             <ul className="list-wrap">
-                                                <li><Link href="tel:+551193714-6936">(11) 93714-6936</Link></li>
+                                                <li><Link href="tel:+5511947984300">(11) 94798-4300</Link></li>
                                                 <li><Link href="mailto:comercial@engefel.com.br">comercial@engefel.com.br</Link></li>
-                                                <li><Link href="https://www.engefel.com.br" target="_blank" rel="noopener noreferrer">www.engefel.com.br</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -47,7 +47,7 @@ export default function Footer1({ }) {
                                         <h2 className="fw-title">Consulte as condições</h2>
                                         <div className="footer-newsletter">
                                             <p>Entre em contato e consulte as condições especiais.</p>
-                                            <Link href="#interesse" className="btn">
+                                            <Link href="#interesse" className="btn" data-track="cta_click" data-track-cta="rodape">
                                                 <div className="btn_m">
                                                     <div className="btn_c">
                                                         <div className="btn_t1">Falar com um especialista</div>

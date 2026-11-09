@@ -277,6 +277,15 @@
 .custom-container {
     max-width: 960px;
 }
+.menu-style-three .menu-area {
+    padding: 22px 0;
+}
+.menu-style-three .menu-nav {
+    justify-content: space-between;
+}
+.menu-style-three .mobile-nav-toggler {
+    display: block;
+}
 .header-action > ul li.header-btn {
 	display: none;
 }
@@ -879,6 +888,16 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 767.98px) {
+.hero-destaque-item .btn {
+    margin-left : auto;
+    margin-right: auto;
+}
+#localizacao .direction-content {
+    text-align: center;
+}
+#interesse .newsletter-form .list-wrap li.submit-btn input[type="submit"] {
+    font-size: 11px;
+}
 .custom-container {
     max-width: 100%;
 }

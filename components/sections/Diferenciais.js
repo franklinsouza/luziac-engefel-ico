@@ -51,7 +51,8 @@ export default function Diferenciais() {
                     <div className="col-xl-8 col-lg-10">
                         <div className="section-title text-center mb-35">
                             <span className="sub-title">Diferenciais</span>
-                            <h2 className="title">Área de lazer completa no terraço</h2>
+                            <h2 className="title">Seu lazer nas alturas</h2>
+                            <p className="diferenciais-lead">No rooftop do Icó Real Parque, você encontra espaços para relaxar, comemorar e aproveitar melhor seus dias.</p>
                         </div>
                     </div>
                 </div>
@@ -63,8 +64,9 @@ export default function Diferenciais() {
                                     {diferenciaisImages.map((image) => (
                                         <SwiperSlide className="gallery-item" key={image.src}>
                                             <a href={image.src} data-fancybox="gallery-diferenciais" data-caption={image.alt}>
-                                                <img src={image.src} alt={image.alt} />
-                                            </a>
+                                                    <img src={image.src} alt={image.alt} />
+                                                    <span>Imagem meramente ilustrativa</span>
+                                                </a>
                                         </SwiperSlide>
                                     ))}
                                 </Swiper>
@@ -82,7 +84,7 @@ export default function Diferenciais() {
                                 <WavesIcon size={44} weight="light" />
                             </div>
                             <div className="feature-content">
-                                <h2 className="title">Piscina</h2>
+                                <h2 className="title">Piscina no rooftop</h2>
                                 <p>Momentos de lazer e relaxamento com vista para o terraço.</p>
                             </div>
                         </div>
@@ -108,6 +110,18 @@ export default function Diferenciais() {
                                 <p>Ambiente completo para comemorar as datas especiais em casa.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col-lg-8">
+                        <div className="plans-ornament" aria-hidden="true">
+                            <svg width="160" height="16" viewBox="0 0 160 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0" y1="8" x2="65" y2="8" stroke="currentColor" strokeWidth="1" />
+                                <rect x="76" y="4" width="8" height="8" transform="rotate(45 80 8)" fill="currentColor" />
+                                <line x1="95" y1="8" x2="160" y2="8" stroke="currentColor" strokeWidth="1" />
+                            </svg>
+                        </div>
+                        <p className="diferenciais-note text-center">Um projeto que valoriza o seu bem-estar e transforma os momentos simples em experiências ainda melhores.</p>
                     </div>
                 </div>
             </div>
